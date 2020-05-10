@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AFrame : Basics</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img
+          id="img"
+          src="https://cdn.glitch.com/8967f718-6bda-468a-a8c7-508cb2bcfdcd%2Flight-show.jpg?v=1588956430864"
+        />
+        <video
+          id="video"
+          autoplay
+          loop="false"
+          src="https://cdn.glitch.com/8967f718-6bda-468a-a8c7-508cb2bcfdcd%2F92808589_255126355615100_2540756120749273987_n.mp4?v=1588955350951"
+        ></video>
+      </a-assets>
+
+      <a-image src="#img" width="5" height="5" position="-3 1 -3"></a-image>
+      <!--       <a-curvedimage src="#img" height="10" width="10" radius="7" theta-length="180"></a-curvedimage> -->
+      <a-video src="#video" width="5" height="5" position="3 0 -3"></a-video>
+      <!--       <a-videosphere src="#video" height="5" width="5" radius="7"></a-videosphere> -->
+    </a-scene>
+  </body>
+</html>
